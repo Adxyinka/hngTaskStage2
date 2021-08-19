@@ -21,7 +21,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Connecting to database
 
-mongoose.connect("mongodb://localhost/resume", {
+mongoose.connect("mongodb://localhost/index", {
 
   useNewUrlParser: true,
 
@@ -45,7 +45,7 @@ app.use(bodyParser.urlencoded({
 
 app.get("/", function(req, res) {
 
-  res.render("resume");
+  res.render("index");
 
 });
 
@@ -100,5 +100,3 @@ app.post("/", function(req, res) {
 // Starting the server at port 3000
 
 app.listen(3000)
-
-});
