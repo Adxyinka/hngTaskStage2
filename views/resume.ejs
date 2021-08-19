@@ -1,0 +1,153 @@
+<!--Opening the ejs tags for including header file-->
+
+<%- include("./partials/header") %>
+
+<!-- Creating a form where action will 
+
+    be on "/" and the method will be "POST" -->
+
+<!-- <form action="/" method="POST">
+
+    <!-- Creating the parameter Username as type= "text"-->
+
+    <!-- <label>Username: </label> -->
+
+    <!-- <input type="text" placeholder="Name" name="username"><br><br> -->
+
+    <!-- Creating the parameter Email as type= "text"-->
+
+    <!-- <label>Email: </label> -->
+
+    <!-- <input type="email" placeholder="Email" name="email"><br><br> -->
+
+    <!-- Creating the submit button -->
+
+    <!-- <button>Submit</button> -->
+
+<!-- </form> -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="">
+  <title>Yinka</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<!--
+<body>
+  <!-- <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'm Yinka</h1>
+    <h3>a programmer</h3>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div> -->
+  <div class="top-container">
+    <div class="profile">
+      <img class="yinkar" src="public/images/chief.jpg" alt="Yinkar-img">
+      <h2 class="hello">Hello.</h2>
+      <p class="intro">I am Adeyinka, a software developer and a graduate of history and diplomatic studies</p>
+    </div>
+    </div>
+    <hr>
+    <div class="middle-container">
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-1">
+        <!-- <img class="comp" src="images/comp.png" alt="computer-img"> -->
+        <h3>Software & Research</h3>
+        <p class="soft"> I started learning to code when i was 16 years old because i wanted to make my own website and be able to hack websites. Overtime, i have gained a pool of experience designing and developing web applications.</p>
+      </div>
+      <div class="sch">
+        <h3>Education</h3>
+        <p class="education">
+
+          studied History and Diplomatic studies at OOU, 2016 - 2020. <br />
+          Ikosi secondary school, 2007 - 2013.
+         </p>
+      </div>
+      <div class="skill-2">
+        <!-- <img class="javass" src="images/javass.png" alt="javass-img"> -->
+        <h3> Javascript</h3></h3>
+        <p class="java">But my best skill is actually javascript. I am the undisputed king of Javascript. React and Node.js are my favourite libraries.</p>
+      </div>
+      <div class="skill-3">
+        <h3>Work Experience</h3>
+     <img class="hng" src="public/images/hng.png" />
+          <p class="wejapa"> - Interned at wejapa, march 2020 - july 2020.  </p>
+           <img class="zuri" src="public/images/zuri.png" />
+          <p class="zurint"> - Currently interning at <a href="https://www.hng.tech">HNG8</a> X <a href="https://wwww.ingressive.org">I4G</a>and <a href="https://www.training.zuri.team"> Zuri</a>.     </p>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch With Me</h2>
+
+      <form action="/" method="POST">
+        <!-- <p>
+          <label>Name</label><br />
+          <input type="text" name="name" value="">
+        </p>
+        <p>
+          <label>Email</label> <br />
+          <input type="email" name="email" value="">
+        </p>
+        <!-- <p>
+          <label>Message</label><br />
+          <input type="text" name="message" value="">
+        </p> -->
+        <!-- <p> -->
+                <!-- <button class="btn" type="button">Send</button> -->
+        <!-- </p>  -->
+
+        <!-- Creating the parameter Username as type= "text"-->
+
+            <label>Name: </label>
+
+            <input type="text" placeholder="" name="username"><br><br>
+
+            <!-- Creating the parameter Email as type= "text"-->
+
+            <label>Email: </label>
+
+            <input type="email" placeholder="" name="email"><br><br>
+
+        <label>Message: </label>
+        <input type="text" name="message" value=""> <br> <br>
+
+            <!-- Creating the submit button -->
+
+            <button class="btn">Submit</button>
+
+      </form>
+      <!-- <h3>If you love Javascript as much as me</h3>
+      <p class="contact-message">Love Javascript as much as I do? Let's talk about how awesome javascript is.</p>-->
+
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.twitter.com/El_Yinka">Twitter</a>
+    <a class="footer-link" href="https://github.com/adeyinkar">GitHub</a>
+    <p class="copyright">© 2021 Adeyinka</p>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--Opening the ejs tags for including footer file-->
+
+<%- include("./partials/footer") %>
