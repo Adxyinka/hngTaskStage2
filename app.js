@@ -11,7 +11,7 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 
 
-
+const port = process.env.PORT || 3000;
 // Calling form.js from models
 
 var Form = require("./models/form");
@@ -99,4 +99,4 @@ app.post("/", function(req, res) {
 
 // Starting the server at port 3000
 
-app.listen(3000)
+app.listen(port, () => console.log('server running'))
