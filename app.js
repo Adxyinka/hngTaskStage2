@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000;
 var Form = require("./models/form");
 
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // Connecting to database
 
