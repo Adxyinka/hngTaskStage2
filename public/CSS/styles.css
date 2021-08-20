@@ -201,8 +201,8 @@ input {
 }
 
 .form {
-  margin: ;
+  /* margin: auto; */
     background-color: #66bfbf;
     position: relative;
-    padding: 100px 50px;
+    padding: 30px 10px;
 }
