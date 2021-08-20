@@ -12,7 +12,7 @@ var formSchema=new mongoose.Schema({
 
     email    : String,
 
-    Message   : String
+    // Message   : String
 
 });
 

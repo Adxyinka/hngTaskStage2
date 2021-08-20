@@ -21,7 +21,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Connecting to database
 
-mongoose.connect("mongodb://localhost/index", {
+mongoose.connect("mongodb://localhost/contact", {
 
   useNewUrlParser: true,
 
@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({
 
 
 
-//rendering form.ejs
+//rendering index file
 
 app.get("/", function(req, res) {
 
@@ -49,6 +49,13 @@ app.get("/", function(req, res) {
 
 });
 
+//rendering contact formSchema
+
+app.get("/contact", function(req, res) {
+
+  res.render("contact");
+
+});
 
 
 // form submission
@@ -69,12 +76,12 @@ app.post("/", function(req, res) {
 
   var email = req.body.email;
 
-  var message = req.body.message;
+  //var message = req.body.message;
 
   var f = {
     username: username,
     email: email,
-    message: message,
+    //message: message,
   };
 
   Form.create(f, function(err, newlyCreatedForm) {
