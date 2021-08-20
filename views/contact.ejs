@@ -1,36 +1,46 @@
-<!--Opening the ejs tags for including header file-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+<div class="form">
 
-<%- include("./partials/header") %>
+    <form action="/" method="POST">
 
-<!-- Creating a form where action will 
+       <!-- Creating the parameter Username as type= "text"-->
 
-    be on "/" and the method will be "POST" -->
+      <p>
 
- <form action="/" method="POST">
+     <label>Username: </label> <br>
 
-    <!-- Creating the parameter Username as type= "text"-->
+     
 
-    <label>Username: </label>
+     <input type="text" placeholder="Name" name="username"><br></p>
 
-    <input type="text" placeholder="Name" name="username"><br><br>
+       <!-- Creating the parameter Email as type= "text"-->
 
-    <!-- Creating the parameter Email as type= "text"-->
+      <p><label>Email: </label>
 
-    <label>Email: </label>
+        <br>
 
-    <input type="email" placeholder="Email" name="email"><br><br>
+      
 
-    <!-- Creating the submit button -->
+     <input type="email" placeholder="Email" name="email"><br></p>
 
-    <button>Submit</button>
+    <p>
 
-</form>
+       <label>Message: </label> <br>
+<input type="text" placeholder="Message" name="message"><br></p>
+       <!-- Creating the submit button -->
 
+       <button>Submit</button>
 
+   </form>
 
+   </div>
 
-
-
-<!--Opening the ejs tags for including footer file-->
-
-<%- include("./partials/footer") %>
+  </body>
+</html>

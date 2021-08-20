@@ -35,6 +35,8 @@ mongoose.connect("mongodb://localhost/contact", {
 
 app.set('view engine', 'ejs');
 
+app.set('views', path.join(__dirname, '/views'));
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -76,12 +78,12 @@ app.post("/", function(req, res) {
 
   var email = req.body.email;
 
-  //var message = req.body.message;
+  var message = req.body.message;
 
   var f = {
     username: username,
     email: email,
-    //message: message,
+    message: message,
   };
 
   Form.create(f, function(err, newlyCreatedForm) {
