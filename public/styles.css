@@ -51,6 +51,8 @@ a:hover {
   padding: 20px 0;
 }
 
+
+
 .skill-1 {
   padding-bottom: 30px;
 }
@@ -60,7 +62,8 @@ a:hover {
 }
 
 .education{
-  padding-bottom: 20px;
+  width: 20%;
+  margin: auto;
 }
 
 .intro {

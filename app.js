@@ -77,17 +77,17 @@ app.post("/", function(req, res) {
 
   Form.create(f, function(err, newlyCreatedForm) {
 
-    if (err)
-
-    {
-
-      console.log(err);
-
-    } else {
+    // if (err)
+    //
+    // {
+    //
+    //   console.log(err);
+    //
+    // } else {
 
       res.redirect("/result");
 
-    }
+    // }
 
   });
 
