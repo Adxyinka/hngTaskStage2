@@ -6,18 +6,27 @@ const app = express();
 
 const path = require('path');
 
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 
 
 const port = process.env.PORT || 3000;
 // Calling form.js from models
 
-var Form = require("./models/form");
+const Form = require("./models/form");
 
+//middlewares
 
-app.use(express.static('public'));
+app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views'));
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Connecting to database
 
@@ -30,19 +39,6 @@ mongoose.connect("mongodb://localhost/contact", {
 });
 
 
-
-//middlewares
-
-app.set('view engine', 'ejs');
-
-app.set('views', path.join(__dirname, '/views'));
-
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-
-
-
 //rendering index file
 
 app.get("/", function(req, res) {
@@ -51,13 +47,6 @@ app.get("/", function(req, res) {
 
 });
 
-//rendering contact formSchema
-
-app.get("/contact", function(req, res) {
-
-  res.render("contact");
-
-});
 
 
 // form submission
