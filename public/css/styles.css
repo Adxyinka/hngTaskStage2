@@ -1,3 +1,5 @@
+* {}
+
 body {
   color: #40514E;
   margin: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 .hello {
-    color: #EAF6F6;
+  color: #EAF6F6;
 }
 
 h1 {
@@ -22,12 +24,12 @@ h2 {
   font-family: 'Montserrat', serif;
   font-weight: normal;
   padding-bottom: 10px;
+  text-align: center:
 }
 
 h3 {
   color: #66BFBF;
   font-family: 'Montserrat', serif;
-
 }
 
 p {
@@ -51,8 +53,6 @@ a:hover {
   padding: 20px 0;
 }
 
-
-
 .skill-1 {
   padding-bottom: 30px;
 }
@@ -61,41 +61,83 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.education{
-  width: 20%;
+.sch {
+  width: 100%;
+  margin: auto;
+}
+
+.sch-2 {
+  width: 100%;
   margin: auto;
 }
 
 .intro {
   color: #EAF6F6;
-  width: 30%;
+  width: 100%;
   margin: auto;
 }
 
 .soft {
-  width: 20%;
-  margin: auto;
-}
-
-.java {
-  width: 20%;
+  width: 100%;
   margin: auto;
 }
 
 .wejapa {
-  width: 20%;
+  width: 100%;
   margin: auto;
 }
 
 .zurint {
-  width: 20%;
+  width: 100%;
   margin: auto;
 }
 
+/* .circular-portrait {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.container {
+  /* Feel free to adjust the values here so you can see it being responsive */
+  width: 200px;
+  display: block;
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 100% 0 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+.circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .yinkar {
   border-radius: 100%;
-  width: 20%;
-  height: 20%;
+  width: 20%
 }
 
 .hng {
@@ -124,17 +166,11 @@ a:hover {
   float: right;
 }
 
-/* .top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
-} */
-
 .top-container {
   margin: auto;
-    background-color: #66bfbf;
-    position: relative;
-    padding: 100px;
+  background-color: #66bfbf;
+  position: relative;
+  padding: 100px;
 }
 
 .middle-container {
@@ -144,7 +180,6 @@ a:hover {
 .bottom-container {
   background-color: #66bfbf;
   padding: 50px 0 20px;
-
 }
 
 hr {
@@ -154,23 +189,16 @@ hr {
   margin: 100px auto;
 }
 
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-
-}
-
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
 }
 
-/* .top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-} */
+.cont-me {
+
+}
+
+
 
 .btn {
   background: #11CDD4;
@@ -199,13 +227,69 @@ hr {
   text-decoration: none;
 }
 
-input {
-  border-radius: 5px;
+/* NEW FORM */
+.contact-form-input,
+.contact-form button {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 24px;
+  letter-spacing: 1px;
+  border: none;
+  width: 100%;
+  outline: none;
 }
 
-.form {
-  /* margin: auto; */
-    background-color: #66bfbf;
-    position: relative;
-    padding: 30px 10px;
+.contact-form {
+  position: relative;
+  max-width: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-form button {
+  background-color: #66bfbf;
+  padding: 20px;
+  color: #fff;
+}
+
+.contact {
+  visibility: visible;
+  /* opacity: 0; */
+  position: relative;
+  left: 0;
+  top: 130px;
+  right: 0;
+  bottom: 0;
+  /* transition: .5s; */
+  background-color: #fff;
+}
+
+.contact:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact-form div:nth-child(1)::after,
+.contact-form div:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.contact-form div:nth-child(1),
+.contact-form div:nth-child(2) {
+  position: relative;
 }

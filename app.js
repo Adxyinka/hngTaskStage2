@@ -84,9 +84,8 @@ app.post("/", function(req, res) {
     //   console.log(err);
     //
     // } else {
-
-      res.redirect("/result");
-
+    // const showAlat = alert('Message submitted!');
+      res.redirect('/result')
     // }
 
   });
