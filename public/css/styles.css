@@ -92,19 +92,6 @@ a:hover {
   margin: auto;
 }
 
-/* .circular-portrait {
-  position: relative;
-  width: 20vw;
-  height: 20vw;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.circular-portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 .container {
   /* Feel free to adjust the values here so you can see it being responsive */
   width: 200px;
