@@ -1,1 +1,5 @@
+# Holds API key
+.env
+
+# Dependency directories
 node_modules

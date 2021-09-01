@@ -1,21 +1,28 @@
-//Requiring mongoose package
-
-var mongoose=require("mongoose");
-
-  
+const mongoose = require("mongoose");
 
 // Schema
 
-var formSchema=new mongoose.Schema({
+const formSchema = new mongoose.Schema({
 
-    username : String,
+  username: {
+    type: String,
+    required: true
+  },
 
-    email    : String,
+  email: {
+    type: String,
+    required: true
+  },
 
-    Message   : String
+  message: {
+    type: String,
+    required: true
+  },
 
-});
+  date: {
+    type: Date,
+    default: Date.now
+  }
+})
 
-  
-
-module.exports=mongoose.model("Form",formSchema);
+module.exports = mongoose.model('Form', formSchema );
